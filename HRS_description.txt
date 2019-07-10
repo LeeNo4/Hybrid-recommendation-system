@@ -1,0 +1,19 @@
+Method Description:
+In this project, I used 5 methods to make predictions. The first and second ways are to use SVD and ALS methods in surprise package. 
+Then I extracted 2 features from user.json(review_count&average_stars) and 2 features from business.json(stars&review_count). I combined 
+these features to use machining learning algorithm to make prediction. After that I also used item-based and user-based CF to get another scores.
+At last, I trained linear regression model by above 5 results and average&max&min scores for users. 
+I got the intercept and coefficients to predict final scores.
+
+Error Distribution:
+>=0 and <1:  101533
+>=1 and <2:  33576
+>=2 and <3:  6207
+>=3 and <4:  726
+>=4:  2
+
+RMSE:
+0.9811532901315407
+
+Execution Time:
+199.19481492042542s
